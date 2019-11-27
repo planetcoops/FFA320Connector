@@ -1,5 +1,11 @@
-Copy the folder FFA320Connector to the plugin directory of your A320.
+Copy the FFA320Connector folder to the plugins subfolder of your Flight Factor A320 Ultimate aircraft.
 
-So, in the end it should look like this:
+So in the end it should look something like this:
 
-X-Plane\Aircrafts\A320\plugins\FFA320Connector
+  X-Plane 11\Aircraft\Flight Factor A320 Ultimate\plugins\FFA320Connector
+
+or
+
+  X-Plane 10\Aircraft\Flight Factor A320 Ultimate\plugins\FFA320Connector
+
+depending on your version of X-Plane.
