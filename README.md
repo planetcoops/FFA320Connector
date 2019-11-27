@@ -8,7 +8,7 @@ You can define own commands or Datarefs in the config.cfg.
 
 If you are not interested in the sourcecode and you just
 want to download the compiled version, visit this Link:
-https://github.com/mokny/FFA320Connector/releases
+http://www.planetcoops.com/apps/xp-remote/ffa320connector
 
 ## Download Nightly Builds
 

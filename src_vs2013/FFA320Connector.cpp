@@ -28,7 +28,7 @@
 
 using namespace std;
 
-string					pluginversion = "1.1.6";																			// Plugin-Version
+string					pluginversion = "1.1.7";																			// Plugin-Version
 
 string					pluginpath;
 string					aircraftpath;
@@ -82,6 +82,7 @@ void					UniversalDataRefSET_FLOAT(void* inRefcon, float inValue);											// 
 int						DrefValueInt[2000];																					// Stores the Dataref-Values (inRefcon points to here)
 float					DrefValueFloat[2000];																				// Stores the Dataref-Values (inRefcon points to here)
 bool					InternalDatarefUpdate = false;																		// For recognition if it was an internal Dref update or not
+int						datarefcounter = 0;																					// Global DataRef counter
 
 bool					DumpObjectsToLogActive = false;
 void					DumpObjectsToLog();																					//Constructor
@@ -757,6 +758,7 @@ void ReadConfigs() {
 	}
 	DataObjects.clear();
 
+	datarefcounter = 0;
 	if (defaultconfigfound == true) ReadConfig(defaultconfigpath);
 	if (customconfigfound == true) ReadConfig(customconfigpath);
 
@@ -785,7 +787,6 @@ void ReadConfig(string filename) {
 
 	string line;
 	int objcounter = 0;
-	int datarefcounter = 0;
 	while (std::getline(input, line))
 	{
 		objcounter++;
